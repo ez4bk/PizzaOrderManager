@@ -5,12 +5,12 @@ the Pizzeria allows the customers to customize the toppings as well. The store s
 take the orders from the customers. Each order is uniquely identified by the customer’s 10-digit telephone number. 
 For simplicity, the system will not keep track of the dates of the orders. The store manager has given you the list of requirements as follows. 
 1. The Pizzeria offers 3 different sizes of pizzas, small, medium, or large, for each flavor.
-  - Deluxe pizza includes 5 toppings, the price for a small size is $12.99.
-  - Hawaiian pizza includes 2 toppings, the price for a small size is $10.99.
-  - Pepperoni pizza includes 1 topping, the price for a small size is $8.99.
-  - Add $2.00 for each size increase
-  - Add $1.49 for each additional topping, up to 7 toppings maximum.
-  - Pizza prices do not decrease if the number of toppings dropped below the number of store customized toppings.
+   - Deluxe pizza includes 5 toppings, the price for a small size is $12.99.
+   - Hawaiian pizza includes 2 toppings, the price for a small size is $10.99.
+   - Pepperoni pizza includes 1 topping, the price for a small size is $8.99.
+   - Add $2.00 for each size increase
+   - Add $1.49 for each additional topping, up to 7 toppings maximum.
+   - Pizza prices do not decrease if the number of toppings dropped below the number of store customized toppings.
 2. The system allows the store staff to choose the pizza flavors with different sizes.
 3. Upon the selection of the pizza flavor, the system displays the image of the selected pizza, the list of stored customized toppings, 
 a list of available toppings for customization, and a list of sizes to choose from.
