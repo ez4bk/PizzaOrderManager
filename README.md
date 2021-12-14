@@ -2,8 +2,11 @@
 RU Pizzeria sells pizzas. A software for the Pizzeria to manage the orders. Use JavaFX to develop the GUIs for taking the orders, placing the orders, and cancelling an order.\
 Currently, the Pizzeria offers 3 flavors of pizzas, Deluxe, Hawaiian and Pepperoni, with store customized toppings. However, 
 the Pizzeria allows the customers to customize the toppings as well. The store staff will be the one using the software to 
-take the orders from the customers. Each order is uniquely identified by the customer’s 10-digit telephone number. 
-For simplicity, the system will not keep track of the dates of the orders. The store manager has given you the list of requirements as follows. 
+take the orders from the customers.\
+Each order is uniquely identified by the customer’s 10-digit telephone number. \
+For simplicity, the system will not keep track of the dates of the orders.
+
+The store manager has given you the list of requirements as follows. 
 1. The Pizzeria offers 3 different sizes of pizzas, small, medium, or large, for each flavor.
    - Deluxe pizza includes 5 toppings, the price for a small size is $12.99.
    - Hawaiian pizza includes 2 toppings, the price for a small size is $10.99.
