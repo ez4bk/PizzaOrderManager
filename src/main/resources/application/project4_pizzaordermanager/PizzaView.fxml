@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.project4_pizzaordermanager.PizzaController">
+   <children>
+      <Label layoutX="293.0" layoutY="101.0" text="Choose Size:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sizeComboBox" layoutX="293.0" layoutY="132.0" onAction="#onSizeChange" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="44.0" layoutY="240.0" text="Add Toppings">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="240.0" text="Selected Toppings">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="addListView" layoutX="44.0" layoutY="272.0" prefHeight="315.0" prefWidth="200.0" />
+      <ListView fx:id="selectedListView" layoutX="339.0" layoutY="272.0" prefHeight="315.0" prefWidth="200.0" />
+      <Button fx:id="addTopping" layoutX="253.0" layoutY="366.0" mnemonicParsing="false" onAction="#onAddTopping" prefWidth="80.0" text="Add&gt;" />
+      <Button fx:id="removeTopping" layoutX="253.0" layoutY="406.0" mnemonicParsing="false" onAction="#onRemoveTopping" prefWidth="80.0" text="&lt;Remove" />
+      <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="40.0" prefHeight="184.0" prefWidth="212.0">
+         <children>
+            <ImageView fx:id="PizzaImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="pizzaName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <GridPane layoutX="45.0" layoutY="594.0" prefHeight="91.0" prefWidth="495.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.20001220703125" minWidth="10.0" prefWidth="159.2" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.3999481201172" minWidth="10.0" prefWidth="336.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Add to Customer:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Price:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="\$">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="price" editable="false" prefHeight="23.0" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="addPizza" mnemonicParsing="false" onAction="#onAddPizza" prefWidth="150.0" text="Add to Order">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="customerNumber" editable="false" maxWidth="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
