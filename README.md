@@ -1,7 +1,7 @@
 # PizzaOrderManager
 A software for the Pizzeria to manage the orders. Use JavaFX to develop the GUIs for taking the orders, placing the orders, and cancelling an order.\
 The software has 4 GUI views and their corresponding controllers, Main, Pizza, Current Order, and Store Order.\
-Pizza is an abstract class, and 3 flavors of pizzas are sub-classes extended from Pizza.\
+Pizza is an abstract class, and 3 flavors of pizzas are sub-classes extended from Pizza.
 
 Currently, the Pizzeria offers 3 flavors of pizzas, Deluxe, Hawaiian and Pepperoni, with store customized toppings. However, 
 the Pizzeria allows the customers to customize the toppings as well. The store staff will be the one using the software to 
